@@ -1,5 +1,5 @@
 function Post ({
-  post: { id, titulo, img, descripcion, likes },
+  post: { id, titulo, url, descripcion, likes },
   like,
   eliminarPost
 }) {
@@ -8,7 +8,7 @@ function Post ({
       <div className='card-body  p-0'>
         <img
           className='card-img-top '
-          src={img}
+          src={url}
         />
         <div className='p-3'>
           <h4 className='card-title'>{titulo}</h4>

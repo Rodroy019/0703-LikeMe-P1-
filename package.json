@@ -1,8 +1,8 @@
 {
   "name": "03-likeme",
-  "private": true,
   "version": "0.0.0",
   "type": "commonjs",
+  "main": "index.js",
   "eslintConfig": {
     "extends": [
       "./node_modules/standard/eslintrc.json"
@@ -13,15 +13,17 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "axios": "^1.7.2",
     "body-parser": "^1.20.2",
     "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "pg": "^8.12.0",
+    "pg-promise": "^11.8.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.2.0",
@@ -35,7 +37,6 @@
     "vite": "^5.1.4"
   },
   "description": "Descripción: La red social “Like Me” está apenas iniciando el proceso de desarrollo, se encuentra estudiando el mercado y analizando la competencia y ha descubierto que el éxito de esta industria se enfoca en los likes de los posts emitidos por los usuarios, por lo que decidió iniciar con el desarrollo de la lógica correspondiente a la creación de posts y a la interacción de likes que este puede tener. En este desafío serás un desarrollador full stack developer de la empresa “Like Me” y deberás crear un servidor que disponibilice las rutas GET y POST para consultas y guardar los posts en una base de datos PostgreSQL con el paquete pg.",
-  "main": "vite.config.js",
   "keywords": [],
   "author": "",
   "license": "ISC"

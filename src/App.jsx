@@ -19,6 +19,9 @@ function App () {
   const agregarPost = async () => {
     const post = { titulo, url: imgSrc, descripcion }
     await axios.post(urlBaseServer + '/posts', post)
+    setTitulo('')
+    setImgSRC('')
+    setDescripcion('')
     getPosts()
   }
 
@@ -44,6 +47,9 @@ function App () {
       <div className='row m-auto px-5'>
         <div className='col-12 col-sm-4'>
           <Form
+            titulo={titulo}
+            imgSrc={imgSrc}
+            descripcion={descripcion}
             setTitulo={setTitulo}
             setImgSRC={setImgSRC}
             setDescripcion={setDescripcion}

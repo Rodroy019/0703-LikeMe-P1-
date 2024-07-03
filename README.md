@@ -6,4 +6,12 @@ En este desafío serás un desarrollador full stack developer de la empresa “L
 
 ## Imagenes:
 ### Inicio
-![Vista Carga de Inicio]()
+![Vista Carga de Inicio](./src/assets/img/01-home.png)
+### Agregar Post
+![Vista Carga de Inicio](./src/assets/img/02-agregar.png)
+### Like al Post
+![Vista Carga de Inicio](./src/assets/img/03-like.png)
+### Eliminar Post
+![Vista Carga de Inicio](./src/assets/img/04-eliminar.png)
+### Post Eliminado
+![Vista Carga de Inicio](./src/assets/img/05-eliminar.png)
